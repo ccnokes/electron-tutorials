@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Preload Scripts</title>
+  <style>
+    webview { border: 1px solid #ebebeb; }
+  </style>
+</head>
+
+<body>
+
+  <webview
+    id="webview"
+    preload="./preload.js"
+    src="./webview.html"
+  ></webview>
+
+  <button id="devtools">Open the webview's dev tools</button>
+
+  <script>
+    require('./renderer');
+  </script>
+
+</body>
+
+</html>

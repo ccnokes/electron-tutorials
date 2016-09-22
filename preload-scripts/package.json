@@ -1,0 +1,7 @@
+{
+  "name": "preloadScripts",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  }
+}

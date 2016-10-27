@@ -1,0 +1,7 @@
+{
+  "name": "mainRendererCommunication",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  }
+}

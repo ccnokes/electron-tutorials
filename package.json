@@ -10,6 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "devtron": "^1.4.0",
-    "electron": "^1.4.4"
+    "electron": "^1.4.15"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "electron-remote": "^1.0.9",
+    "lodash": "^4.15.0"
   }
 }

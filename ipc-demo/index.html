@@ -1,0 +1,26 @@
+<html>
+<style>
+  button {
+    display: block;
+    margin: 0 0 2em 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+</style>
+<body>
+
+  <button id="sendMsgMain">Send IPC message to main</button>
+  <button id="openDialog">Use remote</button>
+
+  <hr />
+
+  <button id="doBlockingWork">Do lots of blocking work</button>
+  <button id="doNonBlockingWork">Do lots of non-blocking work with electron-remote</button>
+
+
+  <script>
+    require('./renderer.js');
+  </script>
+
+</body>
+</html>

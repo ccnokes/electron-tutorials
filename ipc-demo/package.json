@@ -1,0 +1,7 @@
+{
+  "name": "ipc-demo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  }
+}

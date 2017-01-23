@@ -4,17 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "electron-rebuild"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "devtron": "^1.4.0",
-    "electron": "^1.4.15"
+    "electron": "^1.4.15",
+    "electron-rebuild": "^1.5.7"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "electron-remote": "^1.0.9",
+    "keytar": "^3.0.2",
     "lodash": "^4.15.0"
   }
 }

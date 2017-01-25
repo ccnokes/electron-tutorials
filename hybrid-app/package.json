@@ -1,0 +1,7 @@
+{
+  "name": "hybridApp",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  }
+}

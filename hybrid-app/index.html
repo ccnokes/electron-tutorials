@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Todos</title>
+  <style>
+    body {
+      font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+      font-size: 16px;
+      margin: 0;
+    }
+    webview {
+      height: 100%;
+      width: 100%;
+    }
+    webview.hide {
+      flex: 0 1;
+      width: 0px;
+      height: 0px;
+    }
+    .loader {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.7);
+    }
+    .loader-hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loader">
+    <h1>LOADING...</h1>
+  </div>
+
+  <webview
+    class="hide"
+    preload="./preload.js"
+    src="http://localhost:8080"
+  ></webview>
+
+  <script>
+    require('./renderer');
+  </script>
+
+</body>
+
+</html>

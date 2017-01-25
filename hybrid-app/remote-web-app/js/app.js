@@ -1,4 +1,4 @@
-/*global app, $on */
+/*global app, $on, isElectron */
 (function () {
 	'use strict';
 
@@ -15,7 +15,9 @@
 		this.controller = new app.Controller(this.model, this.view);
 
 		// *ADDITION* we expose this method here to Electron
-		window.Bridge.markAllComplete = () => this.controller.toggleAll(true);
+		if(isElectron()) {
+			window.Bridge.markAllComplete = () => this.controller.toggleAll(true);
+		}
 	}
 
 	var todo = new Todo('todos-vanillajs');

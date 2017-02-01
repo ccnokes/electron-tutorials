@@ -10,4 +10,10 @@ https://github.com/ccnokes/electron-tutorials/blob/master/hybrid-app/remote-web-
 
 
 # Installing and running
-`cd remote-web-app` and `http-server` to run a local file server. Then `npm run start` to start the electron app. You can verify that the web app works as normal by just going to `localhost:8080`. 
+To run the Todo app from localhost: `cd remote-web-app` and `http-server`. 
+
+Then `npm run start` to start the Electron app. 
+
+You can verify that the web app works as normal by just going to `localhost:8080`. 
+
+The todo app is included here locally just for convenience. In an actual app they'd be in separate locations. 
